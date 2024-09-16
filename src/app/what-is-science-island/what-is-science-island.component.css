@@ -1,0 +1,187 @@
+.what-is-science-island {
+  padding: 6rem 2rem;
+  background-color: #fff;
+  /* White background */
+  color: #1b3a57;
+  /* Dark blue for text */
+  font-family: 'Open Sans', sans-serif;
+}
+
+.what-is-science-island .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.what-is-science-island .section-title {
+  font-size: 3rem;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.what-is-science-island .section-description {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #444;
+  margin-bottom: 4rem;
+}
+
+/* Island Journey Section */
+.island-journey {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 4rem;
+  flex-wrap: wrap;
+}
+
+.island-journey .journey-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.island-journey .journey-image img {
+  width: 80%;
+  max-width: 600px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
+.island-journey .journey-description h3 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.island-journey .journey-description p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* Immersive Experience Section (Redesigned) */
+.immersive-experience {
+  margin-bottom: 6rem;
+  text-align: center;
+}
+
+.immersive-experience .section-subtitle {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+/* Experience details container */
+.immersive-experience .experience-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* Responsive grid */
+  gap: 2rem;
+  justify-items: center;
+  align-items: start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Detail container */
+.immersive-experience .detail {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.immersive-experience .detail:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Detail Image */
+.immersive-experience .detail-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-bottom: 3px solid #f0f0f0;
+}
+
+/* Detail Content */
+.immersive-experience .detail-content {
+  padding: 1.5rem;
+}
+
+.immersive-experience .detail-content h4 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 0.75rem;
+}
+
+.immersive-experience .detail-content p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Video Section */
+.video-section {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.video-section .section-subtitle {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+}
+
+.video-section .video {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.video-section iframe {
+  width: 100%;
+  height: 450px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Call to Action Section */
+.call-to-action {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.call-to-action h3 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #1a73e8;
+}
+
+.call-to-action .cta-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #1a73e8;
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.call-to-action .cta-button:hover {
+  background-color: #1664c4;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Media Queries for smaller screens */
+@media (max-width: 768px) {
+  .immersive-experience .experience-details {
+    grid-template-columns: 1fr;
+  }
+}

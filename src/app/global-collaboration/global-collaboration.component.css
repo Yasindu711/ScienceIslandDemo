@@ -1,0 +1,150 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffff;
+    color: #2c3e50;
+    margin: 0;
+    padding: 0;
+}
+
+.global-collaboration {
+    padding: 2rem 1rem;
+    background-color: white;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #3498db;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.section-description {
+    font-size: 1.2rem;
+    color: #34495e;
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+}
+
+.collaboration-timeline {
+    position: relative;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.collaboration-item {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    /* Make sure the container takes up full width */
+    max-width: none;
+    /* Remove any maximum width constraints */
+}
+
+.collaboration-item.reverse {
+    flex-direction: row-reverse;
+}
+
+.collaboration-image {
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    max-width: none;
+    width: 100%;
+
+}
+
+/* Forcefully increase image size */
+.collaboration-image img {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.collaboration-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.collaboration-content h3 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.collaboration-content p {
+    font-size: 1rem;
+    color: #34495e;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.collaboration-content h4 {
+    font-size: 1.5rem;
+    color: #2980b9;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.blockquote {
+    font-style: italic;
+    font-size: 1.1rem;
+    background-color: #ecf0f1;
+    padding: 1rem;
+    border-left: 4px solid #3498db;
+    margin: 20px 0;
+    border-radius: 5px;
+    color: #2c3e50;
+    text-align: justify;
+}
+
+.collaboration-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .collaboration-image img {
+        width: 700px;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .collaboration-item {
+        flex-direction: column;
+    }
+
+    .collaboration-item.reverse {
+        flex-direction: column;
+    }
+
+    .collaboration-image img {
+        width: 100%;
+        height: auto;
+    }
+}
